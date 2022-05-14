@@ -171,13 +171,66 @@ https://thierryc.github.io/Next-gh-page-example/
 
 
 
-    7. 리포지토리 생성
+    7. 리포지토리 생성 하기
+        echo "# gh-pages-app" >> README.md
+        git init
+        git add README.md
+        git commit -m "first commit"
+        git branch -M main
+        git remote add origin https://github.com/king-garlic/gh-pages-app.git
+        git push -u origin main    
 
+
+    8. 리포지토리 생성 터미널 로그
+
+
+
+        C:\job\front-end\nextjs\gh-pages-app>echo "# gh-pages-app" >> README.md
+
+        C:\job\front-end\nextjs\gh-pages-app>git init
+        Reinitialized existing Git repository in C:/job/front-end/nextjs/gh-pages-app/.git/
+
+        C:\job\front-end\nextjs\gh-pages-app>git add README.md
+        warning: LF will be replaced by CRLF in README.md.
+        The file will have its original line endings in your working directory
+
+        C:\job\front-end\nextjs\gh-pages-app>git commit -m "first commit"
+        [main e6baef6] first commit
+        1 file changed, 4 insertions(+), 2 deletions(-)
+
+        C:\job\front-end\nextjs\gh-pages-app>git branch -M main
+
+        C:\job\front-end\nextjs\gh-pages-app>git remote add origin https://github.com/king-garlic/gh-pages-app.git
+
+        C:\job\front-end\nextjs\gh-pages-app>git push -u origin main
+        Enumerating objects: 20, done.
+        Counting objects: 100% (20/20), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (20/20), done.
+        Writing objects: 100% (20/20), 8.58 KiB | 2.86 MiB/s, done.
+        Total 20 (delta 4), reused 0 (delta 0), pack-reused 0
+        remote: Resolving deltas: 100% (4/4), done.
+        To https://github.com/king-garlic/gh-pages-app.git
+        * [new branch]      main -> main
+        Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+        C:\job\front-end\nextjs\gh-pages-app>
+
+
+
+    9. 리포지토리 : 새로고침
+        https://github.com/king-garlic/gh-pages-app    
+
+
+    10. 소스 수정 : env-config.js
+        C:\job\front-end\nextjs\gh-pages-app\env-config.js
+            "process.env.BACKEND_URL": prod ? "/gh-pages-app" : "",
     
-    8. 
-    9. 
-    10. 
-    11. 
+    11. 소스 수정 : env-config.js
+        C:\job\front-end\nextjs\gh-pages-app\next.config.js
+            assetPrefix: !debug ? "/gh-pages-app/" : "",
+            
+
     12. 
     13. 
     14. 
