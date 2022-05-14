@@ -171,7 +171,9 @@ https://thierryc.github.io/Next-gh-page-example/
 
 
 
-    7. 
+    7. 리포지토리 생성
+
+    
     8. 
     9. 
     10. 
@@ -185,4 +187,4 @@ https://thierryc.github.io/Next-gh-page-example/
     18. 
     19. 
     20. 
-    
+    "# gh-pages-app" 
