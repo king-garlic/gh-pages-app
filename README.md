@@ -229,12 +229,97 @@ https://thierryc.github.io/Next-gh-page-example/
     11. 소스 수정 : env-config.js
         C:\job\front-end\nextjs\gh-pages-app\next.config.js
             assetPrefix: !debug ? "/gh-pages-app/" : "",
-            
 
-    12. 
-    13. 
-    14. 
-    15. 
+
+    12. cmd 에서 bash 로 변경 하고 배포 명령 실행 : npm run deploy
+
+
+    13. 배포 명령 실행 TERMINAL 로그
+
+        213100@DESKTOP-EE56G2V MINGW64 /c/job/front-end/nextjs/gh-pages-app (main)
+        $ npm run deploy
+
+        > deploy
+        > rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m "Deploy Next.js to gh-pages" && git subtree push --prefix out origin g
+
+        info  - Checking validity of types
+        warn  - No ESLint configuration detected. Run next lint to begin setup
+        info  - Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc.js" https://nextjs.org/docs/messages/swc-disabled
+        info  - Creating an optimized production build
+        info  - Compiled successfully
+        info  - Collecting page data
+        info  - Generating static pages (4/4)
+        info  - Finalizing page optimization
+
+        Page                                       Size     First Load JS
+        ┌ ○ /                                      2.2 kB         72.7 kB
+        ├ ○ /404                                   2.99 kB        73.5 kB
+        └ ○ /about                                 2.21 kB        72.7 kB
+        + First Load JS shared by all              70.5 kB
+        ├ chunks/framework-e70c6273bfe3f237.js   42 kB
+        ├ chunks/main-1a59f16f14cc63cc.js        26 kB
+        ├ chunks/pages/_app-036f199acba0ea9f.js  977 B
+        └ chunks/webpack-38a82e476e2590a4.js     1.43 kB
+
+        ○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+        info  - using build directory: C:\job\front-end\nextjs\gh-pages-app\.next
+        info  - Copying "static build" directory
+        info  - No "exportPathMap" found in "C:\job\front-end\nextjs\gh-pages-app\next.config.js". Generating map from "./pages"
+        info  - Launching 7 workers
+        info  - Exporting (3/3)
+        Export successful. Files written to C:\job\front-end\nextjs\gh-pages-app\out
+        warning: LF will be replaced by CRLF in out/404.html.
+        The file will have its original line endings in your working directory
+        warning: LF will be replaced by CRLF in out/_next/static/chunks/polyfills-5cd94c89d3acac5f.js.
+        The file will have its original line endings in your working directory
+        [main 19ead76] Deploy Next.js to gh-pages
+        16 files changed, 25 insertions(+)
+        create mode 100644 out/.nojekyll
+        create mode 100644 out/404.html
+        create mode 100644 out/_next/static/CT3KEC2OafX7SSMNKOJn2/_buildManifest.js
+        create mode 100644 out/_next/static/CT3KEC2OafX7SSMNKOJn2/_middlewareManifest.js
+        create mode 100644 out/_next/static/CT3KEC2OafX7SSMNKOJn2/_ssgManifest.js
+        create mode 100644 out/_next/static/chunks/894.884bc9854a9cfe85.js
+        create mode 100644 out/_next/static/chunks/framework-e70c6273bfe3f237.js
+        create mode 100644 out/_next/static/chunks/main-1a59f16f14cc63cc.js
+        create mode 100644 out/_next/static/chunks/pages/_app-036f199acba0ea9f.js
+        create mode 100644 out/_next/static/chunks/pages/_error-98e801c646abf33c.js
+        create mode 100644 out/_next/static/chunks/pages/about-3ada7c2c9e76ff10.js
+        create mode 100644 out/_next/static/chunks/pages/index-06b9b971e804acd5.js
+        create mode 100644 out/_next/static/chunks/polyfills-5cd94c89d3acac5f.js
+        create mode 100644 out/_next/static/chunks/webpack-38a82e476e2590a4.js
+        create mode 100644 out/about.html
+        create mode 100644 out/index.html
+        git push using:  origin gh-pages
+        Enumerating objects: 23, done.
+        Counting objects: 100% (23/23), done.
+        Delta compression using up to 8 threads
+        Compressing objects: 100% (21/21), done.
+        Writing objects: 100% (23/23), 108.26 KiB | 5.70 MiB/s, done.
+        Total 23 (delta 3), reused 0 (delta 0), pack-reused 0
+        remote: Resolving deltas: 100% (3/3), done.
+        remote:
+        remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+        remote:      https://github.com/king-garlic/gh-pages-app/pull/new/gh-pages
+        remote:
+        To https://github.com/king-garlic/gh-pages-app.git
+        * [new branch]      187f40f096c47984968af41b24d0e06da974a6df -> gh-pages
+
+        213100@DESKTOP-EE56G2V MINGW64 /c/job/front-end/nextjs/gh-pages-app (main)
+        $
+
+
+    14. SET Your GitHub Pages site is currently being built from the gh-pages branch.
+        https://github.com/king-garlic/gh-pages-app/settings/pages
+
+        SET 설명 페이지 
+        https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+
+    15. 배포된 프로젝트 홈페이지 확인 
+        https://king-garlic.github.io/gh-pages-app
+
+        
     16. 
     17. 
     18. 
