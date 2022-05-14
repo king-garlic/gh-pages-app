@@ -53,6 +53,8 @@ https://thierryc.github.io/Next-gh-page-example/
 
 
 # nextjs sample project 개발 세팅 시작
+    0. 참조 동영상 : 
+        https://www.youtube.com/watch?v=Cm-fT3LIDeQ
 
     1. 프로젝트 생성 : npx create-next-app --example gh-pages gh-pages-app typescript
 
@@ -319,7 +321,7 @@ https://thierryc.github.io/Next-gh-page-example/
     15. 배포된 프로젝트 홈페이지 확인 
         https://king-garlic.github.io/gh-pages-app
 
-        
+
     16. 
     17. 
     18. 
